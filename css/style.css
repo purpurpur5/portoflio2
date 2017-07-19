@@ -1,0 +1,647 @@
+/* -------------
+	General
+---------------*/
+
+* {
+	margin: 0 auto;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+    font-family: 'Montserrat', sans-serif;
+	font-size: 16px;
+	font-weight: 300;
+	color: black;
+}
+
+ul, nav {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+	cursor: pointer;
+	opacity: 0.9;
+	text-transform: uppercase;
+}
+
+a:hover {
+	opacity: 1;
+}
+
+a.btn {
+	color: #fff;
+	border-radius: 4px;
+	text-transform: uppercase;
+	font-weight: 800;
+	text-align: center;
+}
+
+.fa-angle-double-down {
+	font-size: 60px;
+	position:absolute;
+	bottom: 50px;
+	padding: 0;
+	margin-bottom: 0 auto;
+}
+
+hr {
+	width: 100%;
+	background-color: transparent;
+	padding-bottom: 80px;
+	border:0;
+}
+
+section {
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+}
+
+section h3.title{
+	color: #414a4f;
+	text-transform: capitalize; 
+	font: bold 32px 'Open Sans', sans-serif;
+	margin-bottom: 35px;
+	text-align: center;
+}
+
+section p {
+	max-width: 800px;
+	text-align: center;
+	margin-bottom: 35px;
+	padding: 0 20px;
+	line-height: 2;
+}
+
+ul .grid {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.fa {
+	font-size: 50px;
+	padding-bottom: 50px;
+}
+
+h3 {
+	padding: 30px 0;
+	font-size: 30px;
+	text-transform: uppercase;
+}
+/*media queries na kraju*/
+/*-------------
+ 	Header
+-------------*/
+/*.nav {
+	background-color: transparent;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 100%;
+	padding: 0px 100px;
+	border-bottom: 1px solid #eaeaea;
+	text-align: right;
+}*/
+
+.nav {
+	/*border-bottom: 1px solid #eaeaea;*/
+	text-align: right;
+	height: 70px;
+	line-height: 70px;
+	width: 100%;
+}
+
+.menu {
+	margin: 0 30px 0 0;
+}
+
+.menu a{
+	text-decoration: none;
+	color: white;
+	margin: 0 10px;
+	line-height: 70px;
+	clear: right;
+}
+
+.menu span {
+	color: #A6E22E;
+}
+
+label {
+	margin: 0 40px 0 0;
+	font-size: 26px;
+	line-height: 70px;
+	display: none;
+	width: 26px;
+	float: right;
+
+}
+
+#toggle {
+	display: none;
+}
+
+.nav.scrolled {
+  background-color: #F92672 !important;
+  transition: background-color 200ms linear;
+  opacity: 0.8;
+}
+
+.logo {
+	background-image: url(http://easi-ie.com/wp-content/uploads/2013/01/happy-dummy-logos.png);
+	background-size: contain;
+	height: 75px;
+	width: 75px;
+}
+
+header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 10;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	color: whitesmoke;
+	background-color: transparent;
+}
+
+header h2{
+	/*izabrati font*/
+}
+
+header ul {
+	display: flex;
+}
+
+header ul li {
+	margin: 0 15px;
+}
+
+header ul li:first-child {
+	margin-left: 0;
+}
+
+header ul li:last-child {
+	margin-left: 0;
+}
+
+
+/*fale media queries - na kraju sve*/
+
+/*----------------
+ 	Pocetna strana
+----------------*/
+.welcome-page {
+	position: relative;
+	justify-content: center;
+	min-height: 100vh;
+	color: #fff;
+	text-align: center;
+}
+
+.welcome-page .background-image {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	background-position: center center;
+	z-index: -1;
+}
+
+.welcome-page .background-image:after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #414a4f;
+	opacity: 0.3;
+}
+
+.welcome-page h1 {
+	font-family: 'Inconsolata';
+	font-size: 82px;
+	margin-bottom: 15px;
+}
+
+.welcome-page h3 {
+	font: normal 40px 'Open Sans', sans-serif;
+	margin-bottom: 40px;
+	text-transform: none;
+}
+
+.welcome-page .fa {
+	padding: 0;
+}
+
+/* media query fali*/
+
+/*--------------------
+ 	O meni section
+---------------------*/
+
+.wrapper{
+	max-width: 1300px;
+	display: flex;
+	padding-bottom: 50px;
+}
+
+}
+.wrapper h3 {
+	font-family: 'Lato';
+	font-size: 30px;
+	font-weight: bold;
+}
+
+.wrapper p {
+	text-align: center;
+}
+
+#omeni .wrapper .vestine {
+	display:flex;
+	flex-direction: row;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+.vestine{
+	width: 80%;
+	background-color: white;
+}
+
+div .wrapper .vestine .left {
+	flex-basis: 45%;
+	text-align: right;
+	margin: 20px;
+}
+
+div .wrapper .vestine .right {
+	flex-basis: 45%;
+	text-align: center;
+	margin: 20px;
+}
+
+.vestine h5 span {
+	color: #9f2252;
+	font-weight: 300;
+}
+
+.vestine h5, h6 {
+	font-weight: 300;
+	padding: 10px;
+}
+
+.progress-bar {
+	background-color: #9f2252;
+	color: white;
+	margin: 0 0;
+}
+
+.skill .progress {
+	padding: 20px 0;
+}
+/*--------------------
+ 	Usluge section
+---------------------*/
+.usluge .wrapper {
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.usluge .wrapper .gif {
+	flex-basis: 38%;
+	background-image: url(../assets/gif.gif);
+	background-position: center center;
+	background-size: contain ;
+	background-repeat: no-repeat;
+
+}
+
+.usluge .wrapper .uslugetekst {
+	flex-basis: 58%;
+	text-align: center;
+}
+
+.usluge .wrapper .uslugetekst p {
+	text-align: justify;
+}
+
+/*--------------------
+ 	Posao section
+---------------------*/
+
+.wrapper .grid1 li{
+	padding: 20px;
+	height: 350px;
+	border-radius: 3px;
+
+	background-clip: content-box;
+	background-size: contain;
+	background-position: center center;
+	background-color: transparent;
+	background-repeat: no-repeat;
+}
+
+.wrapper .grid1 .fa {
+	font-size: 100px;
+	color: #9f2252;
+	padding-top: 10px;
+}
+/*--------------------
+ 	Projekti section
+---------------------*/
+.wrapper .grid li{
+	flex-basis: 58%;
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 300px;
+	width: 300px;
+	margin-bottom: 20px;
+}
+
+.wrapper .grid li div {
+	display: block;
+	height: 100%;
+	width: 100%;
+	background-color: whitesmoke;
+	opacity: 0;
+}
+
+.wrapper .grid li:nth-child(3n+1) {
+	flex-basis: 38%;
+}
+
+.wrapper .grid li div:hover{
+	transition-duration: 0.5s;
+	opacity: 0.5;
+}
+
+#projekti .wrapper {
+	flex-direction: row;	
+}
+
+div .wrapper .grid li .hover {
+	display: flex;
+}
+
+div .wrapper .grid li .hover .fa {
+	padding: 0;
+}
+
+.wrapper .hover span {
+	margin: auto auto;
+}
+
+/*--------------------
+ 	Footer section
+---------------------*/
+
+footer{
+	background-color: whitesmoke;
+	/*display:-webkit-flex; /* Safari */
+	/*flex-direction: row;
+	justify-content: space-between;*/
+}
+
+footer .wrapper {
+	padding-bottom: 0;
+}
+
+footer .fa {
+	font-size: 30px;
+}
+footer span {
+	flex-basis: 20%;
+	padding-top: 10px;
+}
+
+footer ul {
+	flex-basis: 20%;
+	padding-top: 10px;
+}
+
+/*--------------------
+ 	Footer section
+---------------------*/
+
+/*--------------------
+ 	Media query 
+---------------------*/
+@media screen and (max-width: 450px) {
+	
+	/* mobile - menu navigation*/
+	html {
+		font-size: 14px;
+	}
+
+	label {
+		display: block;
+		cursor: pointer;	
+	}
+
+	h3 {
+		font-size: 20px;
+	}
+
+	.menu {
+		text-align: center;
+		width: 100%;
+		display: none;
+	}
+
+	.menu a {
+		display: block;
+		border-bottom: 1px solid #eaeaea;
+		margin: 0;
+		background: #9f2252;
+	}
+
+	#toggle:checked + .menu {
+		display: block;
+	}
+
+	/*welcome-page*/
+
+	.welcome-page h1 {
+		font-size: 35px;
+	}
+
+	.welcome-page h3 {
+		font-size: 20px;
+	}
+
+	/*o-meni sekcija*/
+
+	.vestine {
+		flex-direction: column !important;
+	}
+
+	div .wrapper .vestine .left {
+		text-align: center;
+	}
+
+	div .wrapper .vestine .right h5 {
+		text-align: center !important;
+	}
+
+	/* usluge */
+
+	.usluge .wrapper {
+		flex-direction: column;
+	}
+
+	.usluge .wrapper .gif {
+		flex-basis: unset;
+		height: 200px;
+		width: 200px;
+	}
+
+	/* posao */
+
+	.wrapper .grid1 {
+		flex-direction: column;
+	}
+
+	.wrapper .grid1 .fa {
+		font-size: 50px;
+	}
+
+	.wrapper .grid1 li {
+		height: 250px;
+	}
+
+	/* projekti */
+
+	.wrapper .grid li {
+		flex-basis: 90%;
+	}
+
+	.wrapper .grid li:nth-child(3n+1) {
+		flex-basis: 90%;
+	}
+
+	/* footer */
+
+	footer {
+		-webkit-flex-direction: column-reverse; /*Safari 6.1+ */
+	}
+
+	/* kraj media query do 450px*/
+}
+
+@media screen and (max-width: 680px) {
+	
+	/* mobile - menu navigation*/
+	html {
+		font-size: 14px;
+	}
+
+	label {
+		display: block;
+		cursor: pointer;	
+	}
+
+	h3 {
+		font-size: 20px;
+	}
+
+	.menu {
+		text-align: center;
+		width: 100%;
+		display: none;
+	}
+
+	.menu a {
+		display: block;
+		border-bottom: 1px solid #eaeaea;
+		margin: 0;
+		background: #9f2252;
+	}
+
+	#toggle:checked + .menu {
+		display: block;
+	}
+
+	/*welcome-page*/
+
+	.welcome-page h1 {
+		font-size: 35px;
+	}
+
+	.welcome-page h3 {
+		font-size: 20px;
+	}
+
+	/*o-meni sekcija*/
+
+	.vestine {
+		flex-direction: column !important;
+	}
+
+	div .wrapper .vestine .left h3 {
+		text-align: center !important
+	}
+
+	div .wrapper .vestine .left {
+		text-align: center;
+	}
+
+	div .wrapper .vestine .right h5 {
+		text-align: center !important;
+	}
+
+	/* usluge */
+
+	.usluge .wrapper {
+		flex-direction: column;
+	}
+
+	.usluge .wrapper .gif {
+		flex-basis: unset;
+		height: 200px;
+		width: 200px;
+	}
+
+	/* posao */
+
+	.wrapper .grid1 {
+		flex-direction: column;
+	}
+
+	.wrapper .grid1 .fa {
+		font-size: 50px;
+	}
+
+	.wrapper .grid1 li {
+		height: 250px;
+	}
+
+	/* projekti */
+
+	.wrapper .grid li {
+		flex-basis: 90%;
+	}
+
+	.wrapper .grid li:nth-child(3n+1) {
+		flex-basis: 90%;
+	}
+
+	/* footer */
+
+	footer {
+		-webkit-flex-direction: column-reverse; /*Safari 6.1+ */
+	}
+
+	/*kraj media queri-ja za */
+}

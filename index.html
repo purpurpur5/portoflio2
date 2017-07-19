@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 1200, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+$(function () {
+  $(document).scroll(function () {
+    var $nav = $(".nav");
+    $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+  });
+});
+</script>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Inconsolata|Montserrat" rel="stylesheet"> 
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<title>Portfolio</title>
+</head>
+
+<body>
+	<header>
+	<section class="nav">
+		<label for=toggle>&#9776</label>
+		<input type="checkbox" id="toggle">
+		<div class="menu">
+			<a href="#pocetna">Početna strana</a>
+			<a href="#o-meni">O meni</a>
+			<a href="#usluge">Usluge</a>
+			<a href="#Posao">Posao</a>
+			<a href="#projekti">Projekti</a>
+			<a href="#kontakt"><span>Kontakt</span></a>
+		</div>
+	</section>
+	</header>
+	
+	<section id="pocetna" class="welcome-page">
+		<div class="background-image" style="background-image:url(assets/pozadina.jpg);">
+		</div>
+		<h1>&lt <span style="color: #F92672">Hello</span><span style="color: #A6E22E">-World</span> /&gt</h1>
+		<h3>Ja sam PurPur.</h3>
+		<a class="btn" href="#o-meni"><span class="fa fa-angle-double-down"></span></a>
+	</section>
+	<hr id="o-meni" style="background-color: whitesmoke;">
+	<div style="background-color: whitesmoke;">
+		<section id="omeni" class="wrapper">
+			<h3>O MENI</h3>
+			<p> Ljubitelj sporta. Ljubitelj igrica. Student FON-a. Svoja interesovanja prepoznao u razvijanju web sajtova. Početnik sa ciljem da napredujem svakim danom.</p>
+			<section class="vestine" style="flex-direction: row;">
+				<div class="left">
+					<img src="assets/logopurpur.png" style="border-radius: 50%;height: 100px;width: 100px;border:2px solid #9f2252">
+					<h5><span>Ime i prezime:</span> Mihailo Purić</h5>
+					<h5><span>Datum rođenja:</span>26 Septembar 1994</h5>
+					<h5><span>Telefon:</span>+381 ** **** ***</h5>
+					<h5><span>E-mail adresa:</span>nijemoj@mail.com</h5>
+				</div>
+				<div class="right">
+					<h5 style="font-size: 24px; text-align: left;">Veštine</h5>
+					<div class="skill">
+						<h6>HTML5</h6>
+						<div class="progress">
+							<div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width:95%">95%</div>
+						</div>
+					</div>
+					<div class="skill">
+						<h6>CSS3</h6>
+						<div class="progress">
+							<div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width:90%">90%</div>
+						</div>
+					</div>
+					<div class="skill">
+						<h6>Javascript</h6>
+						<div class="progress">
+							<div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width:80%">80%</div>
+						</div>
+					</div>
+					<div class="skill">
+						<h6>Jquery</h6>
+						<div class="progress">
+							<div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width:85%">85%</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</section>
+	</div>
+
+	<hr id="usluge">
+
+	<div class="usluge">
+		<section class="wrapper">
+			<div class="gif"></div>
+			<div class="uslugetekst">
+			<h3>Usluge</h3>
+			<p>  PurPur je studio za Web dizajn i Web development sa sedištem u Čačku, Srbija. Naša misija je da pomognemo klijentima da dostignu ciljeve svoga biznisa koristeći naše usluge dizajna i razvoja neprednih Web sistema. Profesionalan pristup razvoju kopleksnih Web sajtova i njihovom održavanju, garant su kvaliteta naših usluga. Pružamo kompletna rešenja koja zadovoljavaju potrebe naših klijenata i pomažu im u unapređenju odnosa sa njihovim partnerima i klijentima. Uspešnim spajanjem grafičkog dizajna, pozadinskih aplikacija, Vaših podataka, i drugih bitnih informacija u jednu celinu stvaramo vizuelno dopadljive Web sajtove koji uspešno prenose Vašu poruku na ciljnu grupu posetilaca na jednostavan i efektan način. Koristeći najnovije tehnologije osiguravamo da Vaš Web sajt bude dostupan svima.</p>
+			</div>
+		</section>
+	</div>
+
+	<hr id="Posao" style="background-color: whitesmoke;">
+	
+	<div style="background-color: whitesmoke;">
+		<section class="wrapper">
+			<h3>Čime se bavimo</h3>
+			<p>Upoznavanje sa željama klijenta, i prikupljanje informacija o projektu.</p>
+			<ul class="grid1" style="display: flex;text-align: center;">
+				<li>
+					<span class="fa fa-pencil"></span>
+					<h4>Web design</h4>
+					<p>Kreiranje vizualnog rešenja i mape Web sajta na osnovu prikupljenih informacija.</p>
+				</li>
+
+				<li>
+					<span class="fa fa-code"></span>
+					<h4>Web development</h4>
+					<p> Kodiranje, programiranje, projektovanje baze podataka, izrada web stranica.</p>
+				</li>
+
+				<li>
+					<span class="fa fa-desktop"></span>
+					<h4>Održavanje sajtova</h4>
+					<p>Održavanja, nadogradnje, izmene, korekcije, ažuriranje sadržaja web sajta.</p>
+				</li>
+			</ul>
+		</section>
+	</div>
+
+	<hr id="projekti">
+	
+	<div>
+		<section class="wrapper">
+			<h3>Dosadašnji projekti</h3>
+			<ul class="grid" style="display: flex;flex-direction: row;flex-wrap: wrap;justify-content: space-around;">
+				<li style="background-image: url(assets/projekat1.jpg);">
+					<div class="hover">
+						<span>
+							<a class="fa fa-search" href="#"></a>
+						</span>
+					</div>
+				</li>
+				
+				<li style="background-image: url(assets/projekat2.jpg);">
+					<div class="hover">
+						<span>
+							<a class="fa fa-search" href="#"></a>
+						</span>
+					</div>
+				</li>
+				<li style="background-image: url(assets/projekat3.jpg);">
+					<div class="hover">
+						<span>
+							<a class="fa fa-search" href="#"></a>
+						</span>
+					</div>
+				</li>
+				<li style="background-image: url(assets/projekat4.jpg);">
+					<div class="hover">
+						<span>
+							<a class="fa fa-search" href="#"></a>
+						</span>
+					</div>
+				</li>
+				</ul>
+				<ul class="grid" style="display: flex;flex-direction: row;flex-wrap: wrap;justify-content: space-around;">
+				<!-- nova lista jer nth ne radi kako treba -->
+				<li style="background-image: url(assets/projekat5.jpg);">
+					<div class="hover">
+						<span>
+							<a class="fa fa-search" href="#"></a>
+						</span>
+					</div>
+				</li>
+				<li style="background-image: url(assets/projekat6.jpg);">
+					<div class="hover">
+						<span>
+							<a class="fa fa-search" href="#"></a>
+						</span>
+					</div>
+				</li>
+				<li style="background-image: url(assets/projekat7.jpg);">
+					<div class="hover">
+						<span>
+							<a class="fa fa-search" href="#"></a>
+						</span>
+					</div>
+				</li>
+				<li style="background-image: url(assets/projekat8.jpg);">
+					<div class="hover">
+						<span>
+							<a class="fa fa-search" href="#"></a>
+						</span>
+					</div>
+				</li>
+				</ul>
+		</section>
+	</div>
+
+	<hr id="kontakt">
+	<footer>
+		<section class="wrapper">
+			<span>&copy PurPur 2017</span>
+			<ul style="display: flex;">
+				<li><a href="#"><i class="fa fa-facebook-square"></i></a></li>
+				<li><a href="#"><i class="fa fa-instagram"></i></a></li>
+				<li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+				<li><a href="#"><i class="fa fa-github-square""></i></a></li>
+			</ul>
+		</section>
+	</footer>
+</body>
